@@ -1,5 +1,7 @@
 # vehiculum-audit
 
+![vehiculum_audit](https://github.com/vehiculum-berlin/vehiculum_audit/workflows/vehiculum_audit/badge.svg?branch=master)
+
 A set of tools for convenient technical analysis of web applications built with Ruby and Ruby on Rails.
 
 - Brakeman - a static analysis security vulnerability scanner for Ruby on Rails applications
