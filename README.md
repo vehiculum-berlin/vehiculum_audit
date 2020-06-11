@@ -1,12 +1,13 @@
 # vehiculum-audit
 
+![vehiculum_audit](https://github.com/vehiculum-berlin/vehiculum_audit/workflows/vehiculum_audit/badge.svg?branch=master)
+
 A set of tools for convenient technical analysis of web applications built with Ruby and Ruby on Rails.
 
 - Brakeman - a static analysis security vulnerability scanner for Ruby on Rails applications
 - Bullet - a gem that finds and kills N+1 queries and unused eager loading
 - Bundler-audit - a patch-level verification for Bundler
 - Fasterer - a gem that helps Rubies go faster
-- Rails_best_practices - a code metric tool for rails projects
 - Reek - a code smell detector
 - RuboCop - a Ruby static code analyzer and code formatter
 
