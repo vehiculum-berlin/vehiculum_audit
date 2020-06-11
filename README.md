@@ -6,7 +6,6 @@ A set of tools for convenient technical analysis of web applications built with 
 - Bullet - a gem that finds and kills N+1 queries and unused eager loading
 - Bundler-audit - a patch-level verification for Bundler
 - Fasterer - a gem that helps Rubies go faster
-- Rails_best_practices - a code metric tool for rails projects
 - Reek - a code smell detector
 - RuboCop - a Ruby static code analyzer and code formatter
 
