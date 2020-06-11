@@ -1,0 +1,157 @@
+require:
+  - rubocop-minitest
+  - rubocop-rake
+
+inherit_gem:
+  vehiculum-codestyle:
+    - default.yml
+
+inherit_from: .rubocop_todo.yml
+
+Style/Documentation:
+  Enabled: false
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'
+
+Metrics/MethodLength:
+  Max: 68
+
+Metrics/ClassLength:
+  Max: 258
+  Exclude:
+    - 'app/components/consumer/factories/persist_leasing_request.rb'
+
+Metrics/ModuleLength:
+  Max: 212
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Style/ExponentialNotation:
+  Enabled: false
+  EnforcedStyle: engineering
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/MethodMissingSuper:
+  Enabled: false
+
+Style/MissingRespondToMissing:
+  Enabled: false
+
+Style/NumericLiteralPrefix:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+# Nodody really wants this. We are using Ruby! ` return ` as direct call should be used as less as possible
+Style/GuardClause:
+  Enabled: false
+
+Style/FormatStringToken:
+  Exclude:
+    - spec/**/*
+
+Style/CaseEquality:
+  Exclude:
+    - spec/**/*
+
+Style/SafeNavigation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 99
+  Exclude:
+    - spec/**/*
+
+Metrics/CyclomaticComplexity:
+  Max: 13
+
+Metrics/PerceivedComplexity:
+  Max: 14
+
+Layout/LineLength:
+  Max: 120
+  IgnoredPatterns: ['(\A|\s)#']
+
+Layout/MultilineHashBraceLayout:
+  EnforcedStyle: symmetrical
+
+Layout/HashAlignment:
+  Enabled: false
+
+Layout/ParameterAlignment:
+  Enabled: false
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Metrics/BlockLength:
+  Enabled: false
+
+# Allows to create getter and setter methods with get_ and set_
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
+Lint/AmbiguousOperator:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6.5
+  CacheRootDirectory: tmp/test-results
+  Exclude:
+    - db/**/*
+    - bin/**
+    - utils/**/*
+    - Guardfile
+    - config/**/*
+    - node_modules/**/*
+    - vendor/**/*
+    - Gemfile
+    - Gemfile.lock
+
+RSpec/RepeatedDescription:
+  Enabled: false
+
+RSpec/RepeatedExampleGroupBody:
+  Enabled: false
+
+RSpec/RepeatedExampleGroupDescription:
+  Enabled: false
