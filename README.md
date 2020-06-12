@@ -1,4 +1,4 @@
-# vehiculum-audit
+# vehiculum_audit
 
 ![vehiculum_audit](https://github.com/vehiculum-berlin/vehiculum_audit/workflows/vehiculum_audit/badge.svg?branch=master)
 
@@ -9,11 +9,14 @@ A set of tools for convenient technical analysis of web applications built with 
 - Bundler-audit - a patch-level verification for Bundler
 - Fasterer - a gem that helps Rubies go faster
 - Reek - a code smell detector
-- RuboCop - a Ruby static code analyzer and code formatter
+- Vehiculum-codestyle - shared Ruby style guide used by Vehiculum Tech team. It includes Rubocop as dependency.
+- SimpleCov - Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites
 
 The tools are configured for displaying output to the console in a single format which results in better readability and no need to switch between the tools.
 
 The complete list of the tools and links to official repositories can be found in vehiculum_audit.gemspec file.
+
+Additionally, you can access code coverage report by opening `index.html` in the `/coverage` derectory.
 
 ## Installation
 
