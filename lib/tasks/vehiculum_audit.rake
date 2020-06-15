@@ -6,7 +6,8 @@ namespace :vehiculum_audit do
       { gem: 'RSpec',      file: '.rspec' },
       { gem: 'Rubocop',    file: '.rubocop.yml' },
       { gem: 'Reek',       file: '.reek.yml' },
-      { gem: 'Fasterer',   file: '.fasterer.yml' }
+      { gem: 'Fasterer',   file: '.fasterer.yml' },
+      { gem: 'Lefthook',   file: 'lefthook.yml' }
     ]
 
     configs.each do |config|
@@ -78,21 +79,6 @@ namespace :vehiculum_audit do
   end
 
   task :info do
-    puts
-
-    box 'Important!', color: :red do
-      <<~INFO
-        You need to install the following utilites:
-
-        On MacOS:
-
-          $ brew install graphviz
-
-        On Linux:
-
-          $ apt-get install graphviz
-      INFO
-    end
 
     box 'How to use'
 
