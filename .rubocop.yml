@@ -1,6 +1,5 @@
 require:
-  - rubocop-minitest
-  - rubocop-rake
+  - rubocop-performance
 
 inherit_gem:
   vehiculum-codestyle:

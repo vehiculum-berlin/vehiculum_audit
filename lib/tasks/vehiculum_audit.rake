@@ -78,6 +78,14 @@ namespace :vehiculum_audit do
     puts 'Done!'.green
   end
 
+  task :install_lefthook do
+    print 'Finalising lefthook installation'
+
+    system 'lefthook install -f'
+
+    puts 'Done!'.green
+  end
+
   task :info do
 
     box 'How to use'

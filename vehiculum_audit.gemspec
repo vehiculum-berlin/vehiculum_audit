@@ -39,6 +39,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'pry-rescue'           # https://github.com/ConradIrwin/pry-rescue
   spec.add_dependency 'pry-stack_explorer'   # https://github.com/pry/pry-stack_explorer
   spec.add_dependency 'reek'                 # https://github.com/troessner/reek
+  spec.add_dependency 'rubocop-performance'  # https://github.com/rubocop-hq/rubocop-performance
   spec.add_dependency 'vehiculum-codestyle'  # https://github.com/Arkweid/lefthook
   spec.add_dependency 'simplecov'            # https://github.com/colszowka/simplecov
   spec.add_dependency 'traceroute'           # https://github.com/amatsuda/traceroute
